@@ -3,14 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/node:lts-browsers
-      
+
     steps:
       - checkout
+      - run: sudo npm install -g @angular/cli
 
       - restore_cache:
           keys:
             - dependencies-{{ checksum "package.json" }}
-      - run: sudo npm install -g @angular/cli
       - run: npm install
       - save_cache:
           key: dependencies-{{ checksum "package.json" }}
@@ -21,3 +21,12 @@ jobs:
       - run: ng test --watch false --reporters progress,junit
       - store_test_results:
           path: test-reports/junit
+
+      - run:
+          name: Deploy
+          command: |
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                ng build --prod
+                cp .circleci/master-readme.md dist/paulshields/README.md
+                npx angular-cli-ghpages --dir=dist/paulshields/ --branch=master --repo=https://GH_TOKEN@github.com/Pkshields/pkshields.github.io.git
+              fi
