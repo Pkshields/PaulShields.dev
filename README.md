@@ -1,5 +1,7 @@
 # PaulShields.dev
 
+[![CircleCI](https://circleci.com/gh/Pkshields/PaulShields.dev.svg?style=shield)](https://circleci.com/gh/Pkshields/PaulShields.dev)
+
 This is simply the source and GitHub Pages repo for my portfolio website, [PaulShields.dev](https://paulshields.dev).
 
 ## Development
@@ -20,6 +22,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run a static analysis check over the source files by executing `ng lint`.
 
-### Deploy
+## Deployment
 
-Deployment should only be done by the [CI server](https://circleci.com/gh/Pkshields/PaulShields.dev).
+Deployment should not be done via a local dev machine and should only executed by the [CI server](https://circleci.com/gh/Pkshields/PaulShields.dev). The deployment key, as well as other deployment configuration options, are stored as environment variables against the project on the CI server.
