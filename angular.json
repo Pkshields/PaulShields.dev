@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/fonts.scss",
+              "node_modules/reset-css/reset.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
