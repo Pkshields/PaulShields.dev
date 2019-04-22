@@ -22,6 +22,4 @@ Run a static analysis check over the source files by executing `ng lint`.
 
 ### Deploy
 
-Deployment should be done by the CI server. However, if it doe sneed to be executed locally...
-
-`[TODO]`
+Deployment should only be done by the [CI server](https://circleci.com/gh/Pkshields/PaulShields.dev).
