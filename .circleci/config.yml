@@ -3,11 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:lts-browsers
-
-    branches:
-      ignore:
-        - master # GitHub pages branch, compiled application only, no CI needed
-
+      
     steps:
       - checkout
 
