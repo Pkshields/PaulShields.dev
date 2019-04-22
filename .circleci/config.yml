@@ -28,5 +28,5 @@ jobs:
               if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 ng build --prod
                 cp .circleci/master-readme.md dist/paulshields/README.md
-                npx angular-cli-ghpages --dir=dist/paulshields/ --branch=master --repo=https://GH_TOKEN@github.com/Pkshields/pkshields.github.io.git
+                npx angular-cli-ghpages --dir=dist/paulshields/ --branch=master --repo=https://${GH_TOKEN}@github.com/Pkshields/pkshields.github.io.git
               fi
