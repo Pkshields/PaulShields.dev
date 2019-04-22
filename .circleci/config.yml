@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:lts-browsers
+
+    branches:
+      ignore:
+        - master # GitHub pages branch, compiled application only, no CI needed
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - dependencies-{{ checksum "package.json" }}
+      - run: sudo npm install -g @angular/cli
+      - run: npm install
+      - save_cache:
+          key: dependencies-{{ checksum "package.json" }}
+          paths:
+            - "node_modules"
+
+      - run: ng lint
+      - run: ng test --watch false --reporters progress,junit
+      - store_test_results:
+          path: test-reports/junit
