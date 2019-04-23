@@ -55,9 +55,24 @@ header {
           transition: background-color .25s ease-in-out;
         }
 
-        a, a:link, a:visited, :hover {
+        a, a:link, a:visited, a:hover {
           color: $text-color;
           text-decoration: none;
+        }
+
+        a:hover{
+          &#skills {
+            background-color: $color-skills;
+          }
+          &#projects {
+            background-color: $color-projects;
+          }
+          &#experience {
+            background-color: $color-experience;
+          }
+          &#contact {
+            background-color: $color-contact;
+          }
         }
       }
     }
