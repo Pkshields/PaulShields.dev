@@ -27,8 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/fonts.scss",
+              "src/css/styles.scss",
+              "src/css/fonts.scss",
               "node_modules/reset-css/reset.css"
             ],
             "scripts": [],
