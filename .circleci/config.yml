@@ -18,7 +18,7 @@ jobs:
             - "node_modules"
 
       - run: ng lint
-      - run: ng test --watch false --reporters progress,junit
+      - run: ng test --watch false --reporters mocha,junit
       - store_test_results:
           path: test-reports/junit
 
