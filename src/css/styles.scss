@@ -1,7 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ * The CSS folder contains any CSS that is available globally throughout the app.
+ * 
+ * Any partial files can be made available in the component css via standard Sass importing.
+ * Any other files are injected into the app via Angular configuration in angular.json.
+ */
+
+ @import 'colors';
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: $text-color;
   background-color: black;
 }
