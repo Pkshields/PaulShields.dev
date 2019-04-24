@@ -2,6 +2,8 @@
 @import '../../css/fonts';
 
 $header-width: 250px;
+$approx-nav-height: 550px;
+$github-icon-width: 40px;
 
 header {
   position: fixed;
@@ -13,6 +15,7 @@ header {
   background-color: $background-color;
   
   z-index: 10;
+  overflow-x: auto;
   
   #logo {
     @extend %league-gothic-font;
@@ -77,6 +80,26 @@ header {
         }
       }
     }
+  }
+
+  #github-link {
+    font-size: $github-icon-width;
+    color: #363636;
+
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: ($github-icon-width / 2) * -1;
+
+    &:hover {
+      color: #555555;
+    }
+  }
+}
+
+@media (max-height: $approx-nav-height) {
+  #github-link {
+    display: none;
   }
 }
 
