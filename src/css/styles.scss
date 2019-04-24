@@ -6,9 +6,10 @@
  */
 
  @import 'colors';
+ @import 'fonts';
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  @extend %open-sans-font;
   color: $text-color;
   background-color: black;
 }

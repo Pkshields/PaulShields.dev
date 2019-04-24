@@ -29,6 +29,7 @@
     "@angular/cli": "~7.3.8",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
+    "@fortawesome/fontawesome-free": "~5.8.1",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -39,7 +40,7 @@
     "karma-firefox-launcher": "~1.1.0",
     "karma-jasmine": "~1.1.2",
     "karma-junit-reporter": "~1.2.0",
-    "karma-mocha-reporter": "^2.2.5",
+    "karma-mocha-reporter": "~2.2.5",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
