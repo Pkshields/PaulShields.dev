@@ -1,6 +1,9 @@
 @import '../../css/colors';
 @import '../../css/fonts';
 
+$animation-speed: 0.8s;
+$animation-delay: 1s;
+
 div {
   min-height:100vh;
   background-color: $background-color;
@@ -29,5 +32,34 @@ div {
         color: $color-alizarin;
       }
     }
+
+    p {
+      animation: slideInFromRightWithBounce $animation-speed ease-out;
+      animation-fill-mode: both;
+
+      &:nth-child(1) {
+        animation-delay: 0s;
+      }
+      &:nth-child(2) {
+        animation-delay: $animation-delay;
+      }
+      &:nth-child(3) {
+        animation-delay: $animation-delay * 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  div > div > p {
+    font-size: 2.1em;
+    line-height: 3em;
+  }
+}
+
+@media (max-width: 800px) {
+  div > div > p {
+    font-size: 1.5em;
+    line-height: 3em;
   }
 }
