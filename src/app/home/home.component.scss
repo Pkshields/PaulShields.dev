@@ -1,0 +1,33 @@
+@import '../../css/colors';
+@import '../../css/fonts';
+
+div {
+  min-height:100vh;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  div {
+    @extend %open-sans-bold-font;
+    text-align: center;
+
+    p {
+      font-size: 2.7em;
+      line-height: 3.2em;
+      
+      .name {
+        color: $color-emerald;
+      }
+      .job-title {
+        color: $color-peter-river;
+      }
+      .city {
+        color: $color-carrot;
+      }
+      .country {
+        color: $color-alizarin;
+      }
+    }
+  }
+}
