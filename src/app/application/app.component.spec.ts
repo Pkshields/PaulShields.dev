@@ -31,4 +31,13 @@ describe('AppComponent', () => {
     expect(dom.querySelector('h1').textContent).toContain('Paul Shields');
     expect(dom.querySelector('h2').textContent).toContain('Developer');
   });
+
+  it('should render nav bar with 4 nav elements', () => {
+    const elements = dom.querySelector('nav').querySelectorAll('li');
+    expect(elements.length).toEqual(4);
+
+    elements.forEach((value, key, parent) => {
+      expect(value.querySelector('a')).not.toBeNull();
+    });
+  });
 });
