@@ -3,7 +3,7 @@
     <h1>Paul Shields</h1>
     <h2>Developer</h2>
   </div>
-  <nav>
+  <nav [ngClass]="menuIsOpen ? 'enabled' : ''">
     <ul>
       <li><a href="#" id="skills">Skills</a></li>
       <li><a href="#" id="projects">Projects</a></li>
@@ -11,6 +11,7 @@
       <li><a href="#" id="contact">Contact</a></li>
     </ul>
   </nav>
+  <i id="menu-button" class="fas fa-bars" (click)="toggleMenu()"></i>
   <a href="https://github.com/Pkshields/PaulShields.dev" id="github-link" target="_blank"><i class="fab fa-github"></i></a>
 </header>
 <main>

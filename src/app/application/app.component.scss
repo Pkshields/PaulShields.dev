@@ -84,6 +84,10 @@ header {
     }
   }
 
+  #menu-button {
+    display: none;
+  }
+
   #github-link {
     font-size: $github-icon-width;
     color: #363636;
