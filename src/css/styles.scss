@@ -11,5 +11,6 @@
 body {
   @extend %open-sans-font;
   color: $text-color;
-  background-color: black;
+  background-color: $background-color;
+  overflow-x: hidden;
 }
