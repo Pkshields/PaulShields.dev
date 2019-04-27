@@ -5,9 +5,9 @@
   </div>
   <nav [ngClass]="menuIsOpen ? 'enabled' : ''">
     <ul>
-      <li><a href="#" id="skills">Skills</a></li>
-      <li><a href="#" id="projects">Projects</a></li>
+      <li><a routerLink="/skills" routerLinkActive="selected" id="skills">Skills</a></li>
       <li><a href="#" id="experience">Experience</a></li>
+      <li><a href="#" id="projects">Projects</a></li>
       <li><a href="#" id="contact">Contact</a></li>
     </ul>
   </nav>

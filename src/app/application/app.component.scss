@@ -38,6 +38,8 @@ header {
   }
   
   nav {
+    overflow-x: hidden;
+    
     ul {
       @extend %open-sans-semibold-font;
       text-align: center;
@@ -64,9 +66,11 @@ header {
           text-decoration: none;
         }
 
-        a:hover{
+        a:hover {
           padding-left: 3px;
+        }
 
+        a:hover, a.selected {
           &#skills {
             background-color: $color-skills;
           }
