@@ -1,0 +1,8 @@
+@import '../../css/mediasizes';
+
+@media #{$mobile-size} {
+  .card {
+    width: 80% !important;
+    min-width: inherit !important;
+  }
+}
