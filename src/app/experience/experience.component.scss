@@ -2,14 +2,14 @@
 @import '../../css/fonts';
 @import '../../css/page';
 
-@include standard-page-styling($color-experience);
+@include standard-page-styling($color-experience, $color-experience-link);
 
 $date-width: 130px;
 $content-background-color: white;
 $content-shadow-color: rgba(0, 0, 0, 0.35);
 
 $date-to-timeline-padding: 25px;
-$timeline-to-content-padding: 55px;
+$timeline-to-content-padding: 50px;
 $timeline-element-vertical-padding: 15px;
 
 ul {
@@ -63,10 +63,10 @@ ul {
         position: absolute;
         width: 0;
         height: 0;
-        top: 10px;
+        top: 13px;
         left: 0;
         
-        border: 0.75em solid white;
+        border: 0.6em solid white;
         border-color: transparent transparent $content-background-color $content-background-color;
         
         transform-origin: 0 0;
@@ -88,6 +88,14 @@ ul {
           padding: 0;
         }
       }
+      
+      a {
+        color: $color-experience;
+      }
     }
   }
+}
+
+p {
+  padding: 50px 0 20px 60px;
 }

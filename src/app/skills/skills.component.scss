@@ -2,7 +2,7 @@
 @import '../../css/fonts';
 @import '../../css/page';
 
-@include standard-page-styling($color-skills);
+@include standard-page-styling($color-skills, $color-skills-link);
 
 $font-awesome-tick: '\f00c';
 

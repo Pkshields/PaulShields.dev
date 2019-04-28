@@ -1,6 +1,6 @@
 @import 'fonts';
 
-@mixin standard-page-styling($page-color) {
+@mixin standard-page-styling($page-color, $page-link-color) {
   header {
     background-color: white;
 
@@ -30,6 +30,15 @@
         font-size: 1.7em;
         padding: 20px;
         padding-top: 0;
+      }
+
+      a {
+        color: $page-link-color;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
