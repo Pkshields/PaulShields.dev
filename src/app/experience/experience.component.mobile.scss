@@ -1,0 +1,15 @@
+@import '../../css/mediasizes';
+
+$date-width: 60px;
+$space-between-date-and-content: 70px;
+
+
+@media #{$mobile-size} {
+  .date {
+    width: $date-width !important;
+  }
+
+  .content {
+    margin-left: $date-width + $space-between-date-and-content !important;
+  }
+}
