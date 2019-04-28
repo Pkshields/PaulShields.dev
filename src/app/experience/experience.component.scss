@@ -1,0 +1,84 @@
+@import '../../css/colors';
+@import '../../css/fonts';
+@import '../../css/page';
+
+@include standard-page-styling($color-experience);
+
+$date-width: 130px;
+$content-background-color: white;
+$content-shadow-color: rgba(0, 0, 0, 0.35);
+
+$date-to-timeline-padding: 25px;
+$timeline-to-content-padding: 55px;
+$timeline-element-vertical-padding: 15px;
+
+ul {
+  li {
+    position: relative;
+    padding: $timeline-element-vertical-padding 0;
+
+    .date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: $date-width;
+
+      padding: 15px + $timeline-element-vertical-padding $date-to-timeline-padding 30px 15px;
+      border-right: 1px solid $timeline-color;
+
+      text-align: right;
+      font-style: italic;
+
+      // Little icon on the timeline
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 20px + $timeline-element-vertical-padding;
+        right: -7px;
+        width: 10px;
+        height: 10px;
+
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color: $text-header-subtitle-color;
+      }
+    }
+    
+    .content {
+      margin-left: $date-width + $date-to-timeline-padding + $timeline-to-content-padding;
+
+      position: relative;
+      padding: 10px;
+
+      background: $content-background-color;
+      color: $text-color-dark;
+      text-align: left;
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.35);
+      
+      // Arrow to the left of the content
+      &::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 10px;
+        left: 0;
+        
+        border: 0.75em solid white;
+        border-color: transparent transparent $content-background-color $content-background-color;
+        
+        transform-origin: 0 0;
+        transform: rotate(45deg);
+        
+        box-shadow: -1px 1px 1px 0 $content-shadow-color;
+      }
+
+      h4 {
+        padding-left: 0;
+        color: $color-experience;
+      }
+    }
+  }
+}
