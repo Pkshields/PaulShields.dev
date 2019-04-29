@@ -1,0 +1,25 @@
+@import '../../css/colors';
+@import '../../css/page';
+
+@include standard-page-styling($color-contact, $color-contact-link);
+
+.half-page {
+  display: inline-block;
+  vertical-align: top;
+  padding: 2%;
+  width: 46%;
+
+  ul {
+    list-style: disc;
+    margin: 20px;
+  }
+
+  p, div {
+    line-height: 1.4em;
+  }
+
+  .reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+}

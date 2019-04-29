@@ -1,3 +1,4 @@
+import { NgxTweetModule } from 'ngx-tweet';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,17 +7,21 @@ import { AppComponent } from './application/app.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 @NgModule({
    declarations: [
       AppComponent,
       HomeComponent,
       SkillsComponent,
-      ExperienceComponent
+      ExperienceComponent,
+      ContactComponent
    ],
    imports: [
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      NgxTweetModule
    ],
    providers: [],
    bootstrap: [
