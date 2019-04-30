@@ -1,0 +1,4 @@
+@import '../../css/colors';
+@import '../../css/page';
+
+@include standard-page-styling($color-projects, $color-projects-link);
