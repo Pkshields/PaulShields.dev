@@ -1,6 +1,6 @@
-@import '../../css/colors';
-@import '../../css/fonts';
-@import '../../css/page';
+@import '../../../css/colors';
+@import '../../../css/fonts';
+@import '../../../css/page';
 
 @include standard-page-styling($color-experience, $color-experience-link);
 
