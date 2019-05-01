@@ -9,7 +9,7 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule.withRoutes([ { path: '**', redirectTo: '' } ])
       ],
       declarations: [
         AppComponent
@@ -30,13 +30,23 @@ describe('AppComponent', () => {
   it('should toggle the mobile menu on and off', () => {
     const initialMenuPosition = component.menuIsOpen;
 
-    component.toggleMenu();
+    component.toggleMobileMenu();
     const secondMenuPosition = component.menuIsOpen;
     expect(secondMenuPosition).not.toEqual(initialMenuPosition);
 
-    component.toggleMenu();
+    component.toggleMobileMenu();
     const thirdMenuPosition = component.menuIsOpen;
     expect(thirdMenuPosition).not.toEqual(secondMenuPosition);
+  });
+
+  it('should close the mobile menu', () => {
+    component.menuIsOpen = false;
+    component.closeMobileMenu();
+    expect(component.menuIsOpen).toEqual(false);
+
+    component.menuIsOpen = true;
+    component.closeMobileMenu();
+    expect(component.menuIsOpen).toEqual(false);
   });
 
   it('should render title in a h1 and h2 tag', () => {
@@ -61,4 +71,19 @@ describe('AppComponent', () => {
 
     expect(component.menuIsOpen).not.toEqual(initialMenuPosition);
   });
+
+  it('should close the mobile menu when any nav element is clicked', () => {
+    const elements = dom.querySelector('nav').querySelectorAll('li > a');
+
+    elements.forEach((value, key, parent) => {
+      const navElement = value as HTMLElement;
+      component.menuIsOpen = true;
+
+      navElement.click();
+
+      expect(component.menuIsOpen).toEqual(false);
+    });
+  });
+
+
 });

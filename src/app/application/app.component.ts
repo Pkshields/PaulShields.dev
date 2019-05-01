@@ -13,7 +13,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit() { }
 
-  toggleMenu() {
+  toggleMobileMenu() {
     this.menuIsOpen = !this.menuIsOpen;
+  }
+
+  closeMobileMenu() {
+    this.menuIsOpen = false;
   }
 }
