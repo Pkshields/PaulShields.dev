@@ -1,5 +1,21 @@
 @import '../../css/mediasizes';
 
+/**
+ * Hack to animate sliding open the menu using height.
+ * CSS can't animate a transition to a runtime defeined height (0 > auto)
+ * So this is used instead. 
+ * 
+ * Reference: 
+ * https://stackoverflow.com/questions/3508605/
+ * https://stackoverflow.com/questions/18087098/
+ */
+
+$slide-out-menu-speed: 2s;
+$slide-out-menu-animation: linear;
+
+$slide-out-menu-part-1: max-height $slide-out-menu-speed cubic-bezier(0, 1, 0, 1);
+$slide-out-menu-part-2: max-height $slide-out-menu-speed $slide-out-menu-animation;
+
 @media #{$mobile-size} {
   header {
     position: inherit;
@@ -14,10 +30,11 @@
       overflow: hidden;
 
       max-height: 0px;
-      transition: max-height 2s linear;
+      transition: $slide-out-menu-part-1;
 
       &.enabled {
         max-height: 2000px;
+        transition: $slide-out-menu-part-2;
       }
 
       ul {
