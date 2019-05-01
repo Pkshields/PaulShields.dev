@@ -54,4 +54,15 @@ describe('SkillsComponent', () => {
       headerIconClasses.push(skillCardHeader.className);
     });
   });
+
+  it('should have a link on each skill', () => {
+    const elements = dom.querySelectorAll('li');
+    expect(elements.length).toBeGreaterThan(0);
+
+    elements.forEach((value, key, parent) => {
+      const aElement = value.querySelector('a');
+      expect(aElement).toBeTruthy();
+      expect(aElement.attributes.getNamedItem('target').value).toBe('_blank');
+    });
+  });
 });
