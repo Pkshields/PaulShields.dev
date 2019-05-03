@@ -1,6 +1,8 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, tick, fakeAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { Location } from '@angular/common';
+import { DummyComponent } from 'src/testing/mocks/dummy-component';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -9,11 +11,18 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule.withRoutes([ { path: '**', redirectTo: '' } ])
+        RouterTestingModule.withRoutes([
+          { path: 'experience', component: DummyComponent },
+          { path: 'skills', component: DummyComponent },
+          { path: 'projects', component: DummyComponent },
+          { path: 'contact', component: DummyComponent }
+        ])
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        DummyComponent
       ],
+      providers: [ RouterTestingModule ]
     }).compileComponents();
 
     const fixture = TestBed.createComponent(AppComponent);
@@ -85,5 +94,29 @@ describe('AppComponent', () => {
     });
   });
 
+  it('should navigate to experience when the nav button is clicked', fakeAsync(() => {
+    assertThatNavLinkWorks('experience', '/experience');
+  }));
 
+  it('should navigate to skills when the nav button is clicked', fakeAsync(() => {
+    assertThatNavLinkWorks('skills', '/skills');
+  }));
+
+  it('should navigate to projects when the nav button is clicked', fakeAsync(() => {
+    assertThatNavLinkWorks('projects', '/projects');
+  }));
+
+  it('should navigate to contact when the nav button is clicked', fakeAsync(() => {
+    assertThatNavLinkWorks('contact', '/contact');
+  }));
+
+  function assertThatNavLinkWorks(navId: string, path: string) {
+    const location = TestBed.get(Location);
+    const element = dom.querySelector('nav').querySelector(`li > a#${navId}`) as HTMLElement;
+
+    element.click();
+    tick();
+
+    expect(location.path()).toEqual(path);
+  }
 });
