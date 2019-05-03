@@ -44,9 +44,23 @@
     }
   }
 
+  :host {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: $page-color;
+  }
+
   @media #{$mobile-size} {
     header > h1 {
       padding-left: 50px;
     }
+  }
+
+  :host {
+    position: inherit;
   }
 }
