@@ -1,0 +1,9 @@
+@import '../../../css/mediasizes';
+
+@media #{$mobile-size} {
+  #modal {
+    article {
+      width: 90%;
+    }
+  }
+}
