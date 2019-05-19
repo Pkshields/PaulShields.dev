@@ -65,4 +65,20 @@ describe('ModalComponent', () => {
 
     expect(dom.querySelector('#modal')).toBeFalsy();
   });
+
+  it('should emit the modal is shown changed event when modal is shown', () => {
+    const spy = spyOn(component.isVisibleChange, 'emit');
+
+    component.show();
+
+    expect(spy).toHaveBeenCalledWith(true);
+  });
+
+  it('should emit the modal is shown changed event when modal is hidden', () => {
+    const spy = spyOn(component.isVisibleChange, 'emit');
+
+    component.hide();
+
+    expect(spy).toHaveBeenCalledWith(false);
+  });
 });

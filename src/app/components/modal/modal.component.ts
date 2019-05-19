@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -7,13 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent {
 
-  isVisible = false;
+  @Input() isVisible = false;
+  @Output() isVisibleChange = new EventEmitter<boolean>();
 
   show() {
-    this.isVisible = true;
+    this.setIsVisible(true);
   }
 
   hide() {
-    this.isVisible = false;
+    this.setIsVisible(false);
+  }
+
+  private setIsVisible(value: boolean) {
+    this.isVisible = value;
+    this.isVisibleChange.emit(this.isVisible);
   }
 }
