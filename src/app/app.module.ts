@@ -1,3 +1,4 @@
+import { ProjectItemComponent } from './components/project-item/project-item.component';
 import { NgxTweetModule } from 'ngx-tweet';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -21,7 +22,8 @@ import { ModalComponent } from './components/modal/modal.component';
       ContactComponent,
       ProjectsComponent,
 
-      ModalComponent
+      ModalComponent,
+      ProjectItemComponent
    ],
    imports: [
       BrowserModule,
