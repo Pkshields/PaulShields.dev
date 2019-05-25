@@ -1,0 +1,4 @@
+<app-project-item [title]="title" [subtext]="subtext" [image]="image" (itemClicked)="showDetailsModal()"></app-project-item>
+<app-modal [(isVisible)]="detailsModalIsVisible">
+  <ng-content></ng-content>
+</app-modal>

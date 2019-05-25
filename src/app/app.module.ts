@@ -11,6 +11,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ProjectSectionComponent } from './components/project-section/project-section.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ModalComponent } from './components/modal/modal.component';
       ProjectsComponent,
 
       ModalComponent,
-      ProjectItemComponent
+      ProjectItemComponent,
+      ProjectSectionComponent
    ],
    imports: [
       BrowserModule,

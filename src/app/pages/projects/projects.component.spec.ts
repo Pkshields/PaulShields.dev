@@ -1,3 +1,5 @@
+import { ModalComponent } from './../../components/modal/modal.component';
+import { ProjectSectionComponent } from './../../components/project-section/project-section.component';
 import { ProjectsComponent } from './projects.component';
 import { async, TestBed } from '@angular/core/testing';
 
@@ -15,7 +17,9 @@ describe('ProjectsComponent', () => {
       ],
       declarations: [
         ProjectsComponent,
-        ProjectItemComponent
+        ProjectSectionComponent,
+        ProjectItemComponent,
+        ModalComponent
       ],
     }).compileComponents();
 
