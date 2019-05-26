@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
+import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
 
 
 @NgModule({
@@ -22,6 +23,8 @@ import { ProjectSectionComponent } from './components/project-section/project-se
       ExperienceComponent,
       ContactComponent,
       ProjectsComponent,
+
+      GBPS3ProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

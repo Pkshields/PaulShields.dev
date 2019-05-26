@@ -5,6 +5,7 @@ import { async, TestBed } from '@angular/core/testing';
 
 import { RouterTestingModule } from '@angular/router/testing';
 import { ProjectItemComponent } from 'src/app/components/project-item/project-item.component';
+import { GBPS3ProjectComponent } from './project-details/gbps3/gbps3.project.component';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -17,6 +18,9 @@ describe('ProjectsComponent', () => {
       ],
       declarations: [
         ProjectsComponent,
+
+        GBPS3ProjectComponent,
+
         ProjectSectionComponent,
         ProjectItemComponent,
         ModalComponent
