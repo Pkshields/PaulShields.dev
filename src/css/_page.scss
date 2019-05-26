@@ -33,6 +33,8 @@
         padding-top: 0;
       }
 
+      @include standard-page-links-styling($color-projects-link);
+
       a {
         color: $page-link-color;
         text-decoration: none;
@@ -62,5 +64,16 @@
 
   :host {
     position: inherit;
+  }
+}
+
+@mixin standard-page-links-styling($page-link-color) {
+  a {
+    color: $page-link-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

@@ -2,7 +2,7 @@ import { ModalComponent } from './../../../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../../../components/project-section/project-section.component';
 import { GBPS3ProjectComponent } from './gbps3.project.component';
 
-import { async, TestBed } from '@angular/core/testing';
+import { async, TestBed, ComponentFixture } from '@angular/core/testing';
 
 import { RouterTestingModule } from '@angular/router/testing';
 import { ProjectItemComponent } from 'src/app/components/project-item/project-item.component';
@@ -11,6 +11,7 @@ import { By } from '@angular/platform-browser';
 describe('GBPS3ProjectComponent', () => {
   let component: GBPS3ProjectComponent;
   let dom: HTMLElement;
+  let fixture: ComponentFixture<GBPS3ProjectComponent>;
 
   let projectSectionComponent: ProjectSectionComponent;
 
@@ -27,7 +28,7 @@ describe('GBPS3ProjectComponent', () => {
       ],
     }).compileComponents();
 
-    const fixture = TestBed.createComponent(GBPS3ProjectComponent);
+    fixture = TestBed.createComponent(GBPS3ProjectComponent);
     fixture.detectChanges();
 
     component = fixture.debugElement.componentInstance;
@@ -51,4 +52,26 @@ describe('GBPS3ProjectComponent', () => {
   it('should have set a project item background image', () => {
     expect(projectSectionComponent.image).not.toEqual('');
   });
+
+  it('should contain a header in the project details modal', () => {
+    givenProjectModalIsOpen();
+
+    const element = dom.querySelector('h2');
+
+    expect(element).toBeTruthy();
+  });
+
+  it('should contain content in the project details modal', () => {
+    givenProjectModalIsOpen();
+
+    const element = dom.querySelector('article');
+
+    expect(element).toBeTruthy();
+  });
+
+  function givenProjectModalIsOpen() {
+    const projectItemLink: HTMLElement = dom.querySelector('a');
+    projectItemLink.click();
+    fixture.detectChanges();
+  }
 });

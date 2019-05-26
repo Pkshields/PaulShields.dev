@@ -1,0 +1,15 @@
+@import '../../../../css/mediasizes';
+
+$paragraph-padding: 30px;
+
+@media #{$mobile-size} {
+  img {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  p {
+    padding-left: $paragraph-padding !important;
+    padding-right: $paragraph-padding !important;
+  }
+}
