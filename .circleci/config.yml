@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - checkout
-      - run: sudo npm install -g @angular/cli
+      - run: sudo npm install -g @angular/cli@7.3.8
 
       - restore_cache:
           keys:
