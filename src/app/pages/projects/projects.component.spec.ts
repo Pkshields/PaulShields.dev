@@ -1,3 +1,4 @@
+import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
 import { ModalComponent } from './../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../components/project-section/project-section.component';
 import { ProjectsComponent } from './projects.component';
@@ -20,6 +21,7 @@ describe('ProjectsComponent', () => {
         ProjectsComponent,
 
         GBPS3ProjectComponent,
+        BombcastRadioProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,

@@ -1,17 +1,17 @@
 import { ModalComponent } from './../../../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../../../components/project-section/project-section.component';
-import { GBPS3ProjectComponent } from './gbps3.project.component';
 
 import { async, TestBed, ComponentFixture } from '@angular/core/testing';
 
 import { RouterTestingModule } from '@angular/router/testing';
 import { ProjectItemComponent } from 'src/app/components/project-item/project-item.component';
 import { By } from '@angular/platform-browser';
+import { BombcastRadioProjectComponent } from './bombcastradio.project.component';
 
-describe('GBPS3ProjectComponent', () => {
-  let component: GBPS3ProjectComponent;
+describe('BombcastRadioProjectComponent', () => {
+  let component: BombcastRadioProjectComponent;
   let dom: HTMLElement;
-  let fixture: ComponentFixture<GBPS3ProjectComponent>;
+  let fixture: ComponentFixture<BombcastRadioProjectComponent>;
 
   let projectSectionComponent: ProjectSectionComponent;
 
@@ -21,14 +21,14 @@ describe('GBPS3ProjectComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        GBPS3ProjectComponent,
+        BombcastRadioProjectComponent,
         ProjectSectionComponent,
         ProjectItemComponent,
         ModalComponent
       ],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(GBPS3ProjectComponent);
+    fixture = TestBed.createComponent(BombcastRadioProjectComponent);
     fixture.detectChanges();
 
     component = fixture.debugElement.componentInstance;
