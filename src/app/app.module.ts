@@ -1,3 +1,4 @@
+import { WebPhysicsProjectComponent } from './pages/projects/project-details/webphysics/webphysics.project.component';
 import { BombcastRadioProjectComponent } from './pages/projects/project-details/bombcastradio/bombcastradio.project.component';
 import { ProjectItemComponent } from './components/project-item/project-item.component';
 import { NgxTweetModule } from 'ngx-tweet';
@@ -27,6 +28,7 @@ import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gb
 
       GBPS3ProjectComponent,
       BombcastRadioProjectComponent,
+      WebPhysicsProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

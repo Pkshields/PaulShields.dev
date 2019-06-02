@@ -30,7 +30,10 @@
         text-transform: uppercase;
         font-size: 1.7em;
         padding: 20px;
-        padding-top: 0;
+
+        &:first-child {
+          padding-top: 0;
+        }
       }
 
       @include standard-page-links-styling($color-projects-link);

@@ -1,0 +1,24 @@
+<app-project-section 
+  [title]="'Web Based Physics Engines'" 
+  [subtext]="'Researching physics engines in Unity &amp; WebGL'" 
+  [image]="'assets/project-images/thumbnail/webphysics.png'">
+
+  <h2>Web Based Physics Engines</h2>
+  <article>
+    <img src="assets/project-images/fullsize/webphysics.png" style="width: 530px;" />
+    <p>For my Final Year Research Project at <a href="http://www.qub.ac.uk/">Queen's University of Belfast</a>, I performed research on the Accuracy and Performance of Physics Engines in Web Browsers. The aim of this research is to provide a quantitative analysis of the accuracy and performance of the physics engines used in two of the fastest growing web-based game frameworks, Unity, via the Unity Web Plugin and via the WebGL build, and WebGL, using the most accurate physics engine for the framework currently available. Both the web browser and the hardware in which the game was running on were examined.</p>
+    <p>The experiments used to compare these physics engines comprised of a Static Friction Test, comparing how the physics engines calculate the angle at which a box began to slide on a plane to real world static friction data, and a Car Test, examining if there was any side-to-side deviation from a car, created using the physics engine's vehicle module, accelerating in a straight line and the stopping distance of the car at various speeds.</p>
+    <p>These decisions were made from previous research in this field. This previous research, as well as results and analysis from the tests, are described in the 13,000 word dissertation I wrote for this project.</p>
+    <p>The technologies I used in this project include:</p>
+    <ul>
+      <li>Unity 5.0, including sendmessage to communicate with the browser</li>
+      <li>WebGL, via JavaScript &amp; HTML5</li>
+      <li>Physi.JS (Bullet)</li>
+      <li>Selenium, via the Java bindings</li>
+      <li>Java's robot.class</li>
+    </ul>
+    
+    <p><a href="https://archive.paulshields.dev/webphysics/unity.html" target="_blank">Interactable Test Suite, used in the experiments</a></p>
+    <p><a href="assets/pdf/Dissertation.pdf">Dissertation (PDF)</a></p>
+  </article>
+</app-project-section>
