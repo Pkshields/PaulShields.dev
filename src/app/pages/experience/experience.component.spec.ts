@@ -54,7 +54,7 @@ describe('ExperienceComponent', () => {
 
     let result = false;
     elements.forEach((value, key, parent) => {
-      result = result || value.href.search('assets/cv/CV-PaulShields.pdf') !== -1;
+      result = result || value.href.search('assets/pdf/CV-PaulShields.pdf') !== -1;
     });
 
     expect(result).toBeTruthy();
