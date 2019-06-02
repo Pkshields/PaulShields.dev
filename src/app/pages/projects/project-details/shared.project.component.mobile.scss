@@ -8,7 +8,7 @@ $paragraph-padding: 30px;
     height: auto !important;
   }
 
-  p {
+  p, ul{
     padding-left: $paragraph-padding !important;
     padding-right: $paragraph-padding !important;
   }
