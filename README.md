@@ -4,6 +4,8 @@
 
 This is simply the source and GitHub Pages repo for my portfolio website, [PaulShields.dev](https://paulshields.dev).
 
+For the repository containing the hosted version of the site, check [here](https://github.com/Pkshields/pkshields.github.io).
+
 ## Development
 
 #### Run local server
@@ -25,3 +27,19 @@ Run a static analysis check over the source files by executing `ng lint`.
 ## Deployment
 
 Deployment should not be done via a local dev machine and should only executed by the [CI server](https://circleci.com/gh/Pkshields/PaulShields.dev). The deployment key, as well as other deployment configuration options, are stored as environment variables against the project on the CI server.
+
+## Projects
+
+The Projects page on this website is structured slightly differently from the others. This website (and repo) contains the screenshots and a text description of each project I have available, but each project links "externally" to its own git repository for its source code and associated resources. How that project structures its resources depends on where the repository is hosted.
+
+### GitHub
+
+- The Project page will link directly to the repository on GitHub, if it is open source.
+- Any compiled binaries, demo projects etc. that are available to download are uploaded directly to the repository via a [release](https://help.github.com/en/articles/creating-releases), which can then linked to directly by Project on the website.
+- Any web resources such as documentation or a web page based game is provided using a [project based Github ages site](https://pages.github.com/),
+
+### BitBucket
+
+- The Project page will link directly to the repository on BitBucket, if it is open source.
+- Any compiled binaries, demo projects etc. that are available to download are uploaded directly to the repository's [Downloads](https://bitbucket.org/blog/new-feature-downloads) page, which can then then linked to directly by Project on the website.
+- Any web resources such as documentation or a web page based game is hosted by [Surge](), check [this repository](https://bitbucket.org/blog/new-feature-downloads) for more information.
