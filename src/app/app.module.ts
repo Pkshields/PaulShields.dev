@@ -16,6 +16,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
 import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
+import { ParticleSystemProjectComponent } from './pages/projects/project-details/particlesystem/particlesystem.project.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gb
       BombcastRadioProjectComponent,
       WebPhysicsProjectComponent,
       Physics4KProjectComponent,
+      ParticleSystemProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

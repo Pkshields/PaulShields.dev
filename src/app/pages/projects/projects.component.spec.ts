@@ -1,3 +1,4 @@
+import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
 import { WebPhysicsProjectComponent } from './project-details/webphysics/webphysics.project.component';
 import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
@@ -26,6 +27,7 @@ describe('ProjectsComponent', () => {
         BombcastRadioProjectComponent,
         WebPhysicsProjectComponent,
         Physics4KProjectComponent,
+        ParticleSystemProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
