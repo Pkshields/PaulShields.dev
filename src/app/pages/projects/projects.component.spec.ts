@@ -1,3 +1,4 @@
+import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
 import { WebPhysicsProjectComponent } from './project-details/webphysics/webphysics.project.component';
 import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
 import { ModalComponent } from './../../components/modal/modal.component';
@@ -24,6 +25,7 @@ describe('ProjectsComponent', () => {
         GBPS3ProjectComponent,
         BombcastRadioProjectComponent,
         WebPhysicsProjectComponent,
+        Physics4KProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
