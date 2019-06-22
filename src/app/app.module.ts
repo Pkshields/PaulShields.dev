@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BombcastRadioProjectComponent } from './pages/projects/project-details/bombcastradio/bombcastradio.project.component';
+import { GameOfLifeProjectComponent } from './pages/projects/project-details/gameoflife/gameoflife.project.component';
 import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
 import { ParticleSystemProjectComponent } from './pages/projects/project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './pages/projects/project-details/physics4k/physics4k.project.component';
@@ -35,6 +36,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       Physics4KProjectComponent,
       ParticleSystemProjectComponent,
       UndeadRedemptionProjectComponent,
+      GameOfLifeProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,
