@@ -1,23 +1,24 @@
-import { Physics4KProjectComponent } from './pages/projects/project-details/physics4k/physics4k.project.component';
-import { WebPhysicsProjectComponent } from './pages/projects/project-details/webphysics/webphysics.project.component';
-import { BombcastRadioProjectComponent } from './pages/projects/project-details/bombcastradio/bombcastradio.project.component';
-import { ProjectItemComponent } from './components/project-item/project-item.component';
 import { NgxTweetModule } from 'ngx-tweet';
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './pages/application/app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { SkillsComponent } from './pages/skills/skills.component';
-import { ExperienceComponent } from './pages/experience/experience.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ProjectItemComponent } from './components/project-item/project-item.component';
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
+import { AppComponent } from './pages/application/app.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
+import { HomeComponent } from './pages/home/home.component';
+import { BombcastRadioProjectComponent } from './pages/projects/project-details/bombcastradio/bombcastradio.project.component';
 import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
 import { ParticleSystemProjectComponent } from './pages/projects/project-details/particlesystem/particlesystem.project.component';
-
+import { Physics4KProjectComponent } from './pages/projects/project-details/physics4k/physics4k.project.component';
+import { UndeadRedemptionProjectComponent } from './pages/projects/project-details/undeadredemption/undeadredemption.project.component';
+import { WebPhysicsProjectComponent } from './pages/projects/project-details/webphysics/webphysics.project.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 @NgModule({
    declarations: [
@@ -33,6 +34,7 @@ import { ParticleSystemProjectComponent } from './pages/projects/project-details
       WebPhysicsProjectComponent,
       Physics4KProjectComponent,
       ParticleSystemProjectComponent,
+      UndeadRedemptionProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

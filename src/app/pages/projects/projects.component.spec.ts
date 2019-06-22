@@ -1,15 +1,17 @@
-import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
-import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
-import { WebPhysicsProjectComponent } from './project-details/webphysics/webphysics.project.component';
-import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
+import { ProjectItemComponent } from 'src/app/components/project-item/project-item.component';
+
+import { TestBed, async } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+
 import { ModalComponent } from './../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../components/project-section/project-section.component';
-import { ProjectsComponent } from './projects.component';
-import { async, TestBed } from '@angular/core/testing';
-
-import { RouterTestingModule } from '@angular/router/testing';
-import { ProjectItemComponent } from 'src/app/components/project-item/project-item.component';
+import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
 import { GBPS3ProjectComponent } from './project-details/gbps3/gbps3.project.component';
+import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
+import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
+import { UndeadRedemptionProjectComponent } from './project-details/undeadredemption/undeadredemption.project.component';
+import { WebPhysicsProjectComponent } from './project-details/webphysics/webphysics.project.component';
+import { ProjectsComponent } from './projects.component';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -28,6 +30,7 @@ describe('ProjectsComponent', () => {
         WebPhysicsProjectComponent,
         Physics4KProjectComponent,
         ParticleSystemProjectComponent,
+        UndeadRedemptionProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
