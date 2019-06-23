@@ -6,6 +6,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ModalComponent } from './../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../components/project-section/project-section.component';
 import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
+import { BulletHeliProjectComponent } from './project-details/bulletheli/bulletheli.project.component';
 import { GameOfLifeProjectComponent } from './project-details/gameoflife/gameoflife.project.component';
 import { GBPS3ProjectComponent } from './project-details/gbps3/gbps3.project.component';
 import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
@@ -33,6 +34,7 @@ describe('ProjectsComponent', () => {
         ParticleSystemProjectComponent,
         UndeadRedemptionProjectComponent,
         GameOfLifeProjectComponent,
+        BulletHeliProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
