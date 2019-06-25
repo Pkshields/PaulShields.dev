@@ -6,12 +6,12 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { ModalComponent } from './../../../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../../../components/project-section/project-section.component';
-import { UndeadRedemptionProjectComponent } from './undeadredemption.project.component';
+import { VlappyManProjectComponent } from './vlappyman.project.component';
 
-describe('UndeadRedemptionProjectComponent', () => {
-  let component: UndeadRedemptionProjectComponent;
+describe('VlappyManProjectComponent', () => {
+  let component: VlappyManProjectComponent;
   let dom: HTMLElement;
-  let fixture: ComponentFixture<UndeadRedemptionProjectComponent>;
+  let fixture: ComponentFixture<VlappyManProjectComponent>;
 
   let projectSectionComponent: ProjectSectionComponent;
 
@@ -21,14 +21,14 @@ describe('UndeadRedemptionProjectComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        UndeadRedemptionProjectComponent,
+        VlappyManProjectComponent,
         ProjectSectionComponent,
         ProjectItemComponent,
         ModalComponent
       ],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(UndeadRedemptionProjectComponent);
+    fixture = TestBed.createComponent(VlappyManProjectComponent);
     fixture.detectChanges();
 
     component = fixture.debugElement.componentInstance;

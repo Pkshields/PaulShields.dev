@@ -18,6 +18,7 @@ import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gb
 import { ParticleSystemProjectComponent } from './pages/projects/project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './pages/projects/project-details/physics4k/physics4k.project.component';
 import { UndeadRedemptionProjectComponent } from './pages/projects/project-details/undeadredemption/undeadredemption.project.component';
+import { VlappyManProjectComponent } from './pages/projects/project-details/vlappyman/vlappyman.project.component';
 import { WebPhysicsProjectComponent } from './pages/projects/project-details/webphysics/webphysics.project.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
@@ -39,6 +40,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       UndeadRedemptionProjectComponent,
       GameOfLifeProjectComponent,
       BulletHeliProjectComponent,
+      VlappyManProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

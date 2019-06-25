@@ -58,5 +58,9 @@ article {
     padding: 23px;
   }
 
+  i {
+    font-style: italic;
+  }
+
   @include standard-page-links-styling($color-projects-link);
 }
