@@ -17,6 +17,9 @@ import { GameOfLifeProjectComponent } from './pages/projects/project-details/gam
 import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
 import { ParticleSystemProjectComponent } from './pages/projects/project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './pages/projects/project-details/physics4k/physics4k.project.component';
+import {
+   ThePixelUndergroundProjectComponent
+} from './pages/projects/project-details/thepixelunderground/thepixelunderground.project.component';
 import { UndeadRedemptionProjectComponent } from './pages/projects/project-details/undeadredemption/undeadredemption.project.component';
 import { VlappyManProjectComponent } from './pages/projects/project-details/vlappyman/vlappyman.project.component';
 import { WebPhysicsProjectComponent } from './pages/projects/project-details/webphysics/webphysics.project.component';
@@ -41,6 +44,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       GameOfLifeProjectComponent,
       BulletHeliProjectComponent,
       VlappyManProjectComponent,
+      ThePixelUndergroundProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

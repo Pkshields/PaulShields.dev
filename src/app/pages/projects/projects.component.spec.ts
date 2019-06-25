@@ -11,6 +11,7 @@ import { GameOfLifeProjectComponent } from './project-details/gameoflife/gameofl
 import { GBPS3ProjectComponent } from './project-details/gbps3/gbps3.project.component';
 import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
+import { ThePixelUndergroundProjectComponent } from './project-details/thepixelunderground/thepixelunderground.project.component';
 import { UndeadRedemptionProjectComponent } from './project-details/undeadredemption/undeadredemption.project.component';
 import { VlappyManProjectComponent } from './project-details/vlappyman/vlappyman.project.component';
 import { WebPhysicsProjectComponent } from './project-details/webphysics/webphysics.project.component';
@@ -37,6 +38,7 @@ describe('ProjectsComponent', () => {
         GameOfLifeProjectComponent,
         BulletHeliProjectComponent,
         VlappyManProjectComponent,
+        ThePixelUndergroundProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
