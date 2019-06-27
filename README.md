@@ -36,10 +36,10 @@ The Projects page on this website is structured slightly differently from the ot
 
 - The Project page will link directly to the repository on GitHub, if it is open source.
 - Any compiled binaries, demo projects etc. that are available to download are uploaded directly to the repository via a [release](https://help.github.com/en/articles/creating-releases), which can then linked to directly by Project on the website.
-- Any web resources such as documentation or a web page based game is provided using a [project based Github ages site](https://pages.github.com/),
+- Any web resources such as documentation or a web page based game is provided using a [project based GitHub Pages site](https://pages.github.com/),
 
 ### BitBucket
 
 - The Project page will link directly to the repository on BitBucket, if it is open source.
 - Any compiled binaries, demo projects etc. that are available to download are uploaded directly to the repository's [Downloads](https://bitbucket.org/blog/new-feature-downloads) page, which can then then linked to directly by Project on the website.
-- Any web resources such as documentation or a web page based game is hosted by [Surge](), check [this repository](https://bitbucket.org/blog/new-feature-downloads) for more information.
+- Any web resources such as documentation or a web page based game is hosted by [Surge](https://surge.sh/), check [this repository](https://bitbucket.org/blog/new-feature-downloads) for more information.
