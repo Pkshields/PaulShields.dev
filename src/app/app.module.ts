@@ -13,6 +13,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BombcastRadioProjectComponent } from './pages/projects/project-details/bombcastradio/bombcastradio.project.component';
 import { BulletHeliProjectComponent } from './pages/projects/project-details/bulletheli/bulletheli.project.component';
+import { GameFrameworksProjectComponent } from './pages/projects/project-details/gameframeworks/gameframeworks.project.component';
 import { GameOfLifeProjectComponent } from './pages/projects/project-details/gameoflife/gameoflife.project.component';
 import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
 import { KinectXNAProjectComponent } from './pages/projects/project-details/kinectxna/kinectxna.project.component';
@@ -47,6 +48,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       VlappyManProjectComponent,
       ThePixelUndergroundProjectComponent,
       KinectXNAProjectComponent,
+      GameFrameworksProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,
