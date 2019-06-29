@@ -17,6 +17,7 @@ import { GameFrameworksProjectComponent } from './pages/projects/project-details
 import { GameOfLifeProjectComponent } from './pages/projects/project-details/gameoflife/gameoflife.project.component';
 import { GBPS3ProjectComponent } from './pages/projects/project-details/gbps3/gbps3.project.component';
 import { KinectXNAProjectComponent } from './pages/projects/project-details/kinectxna/kinectxna.project.component';
+import { MuScreenManagerProjectComponent } from './pages/projects/project-details/muscreenmanager/muscreenmanager.project.component';
 import { ParticleSystemProjectComponent } from './pages/projects/project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './pages/projects/project-details/physics4k/physics4k.project.component';
 import {
@@ -49,6 +50,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       ThePixelUndergroundProjectComponent,
       KinectXNAProjectComponent,
       GameFrameworksProjectComponent,
+      MuScreenManagerProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

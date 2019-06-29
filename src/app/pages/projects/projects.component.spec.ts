@@ -11,6 +11,7 @@ import { GameFrameworksProjectComponent } from './project-details/gameframeworks
 import { GameOfLifeProjectComponent } from './project-details/gameoflife/gameoflife.project.component';
 import { GBPS3ProjectComponent } from './project-details/gbps3/gbps3.project.component';
 import { KinectXNAProjectComponent } from './project-details/kinectxna/kinectxna.project.component';
+import { MuScreenManagerProjectComponent } from './project-details/muscreenmanager/muscreenmanager.project.component';
 import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
 import { ThePixelUndergroundProjectComponent } from './project-details/thepixelunderground/thepixelunderground.project.component';
@@ -43,6 +44,7 @@ describe('ProjectsComponent', () => {
         ThePixelUndergroundProjectComponent,
         KinectXNAProjectComponent,
         GameFrameworksProjectComponent,
+        MuScreenManagerProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
