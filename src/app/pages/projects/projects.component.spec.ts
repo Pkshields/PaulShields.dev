@@ -14,6 +14,7 @@ import { KinectXNAProjectComponent } from './project-details/kinectxna/kinectxna
 import { MuScreenManagerProjectComponent } from './project-details/muscreenmanager/muscreenmanager.project.component';
 import { ParticleSystemProjectComponent } from './project-details/particlesystem/particlesystem.project.component';
 import { Physics4KProjectComponent } from './project-details/physics4k/physics4k.project.component';
+import { SuperEasyPHPTemplatingProjectComponent } from './project-details/supereasyphptemplating/supereasyphptemplating.project.component';
 import { ThePixelUndergroundProjectComponent } from './project-details/thepixelunderground/thepixelunderground.project.component';
 import { UndeadRedemptionProjectComponent } from './project-details/undeadredemption/undeadredemption.project.component';
 import { VlappyManProjectComponent } from './project-details/vlappyman/vlappyman.project.component';
@@ -45,6 +46,7 @@ describe('ProjectsComponent', () => {
         KinectXNAProjectComponent,
         GameFrameworksProjectComponent,
         MuScreenManagerProjectComponent,
+        SuperEasyPHPTemplatingProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
