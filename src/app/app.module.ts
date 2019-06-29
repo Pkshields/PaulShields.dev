@@ -29,6 +29,7 @@ import {
 import { UndeadRedemptionProjectComponent } from './pages/projects/project-details/undeadredemption/undeadredemption.project.component';
 import { VlappyManProjectComponent } from './pages/projects/project-details/vlappyman/vlappyman.project.component';
 import { WebPhysicsProjectComponent } from './pages/projects/project-details/webphysics/webphysics.project.component';
+import { Windows8AppsProjectComponent } from './pages/projects/project-details/windows8apps/windows8apps.project.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 
@@ -55,6 +56,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       GameFrameworksProjectComponent,
       MuScreenManagerProjectComponent,
       SuperEasyPHPTemplatingProjectComponent,
+      Windows8AppsProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

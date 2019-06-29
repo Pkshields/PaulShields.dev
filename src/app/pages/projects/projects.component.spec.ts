@@ -19,6 +19,7 @@ import { ThePixelUndergroundProjectComponent } from './project-details/thepixelu
 import { UndeadRedemptionProjectComponent } from './project-details/undeadredemption/undeadredemption.project.component';
 import { VlappyManProjectComponent } from './project-details/vlappyman/vlappyman.project.component';
 import { WebPhysicsProjectComponent } from './project-details/webphysics/webphysics.project.component';
+import { Windows8AppsProjectComponent } from './project-details/windows8apps/windows8apps.project.component';
 import { ProjectsComponent } from './projects.component';
 
 describe('ProjectsComponent', () => {
@@ -47,6 +48,7 @@ describe('ProjectsComponent', () => {
         GameFrameworksProjectComponent,
         MuScreenManagerProjectComponent,
         SuperEasyPHPTemplatingProjectComponent,
+        Windows8AppsProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
