@@ -7,6 +7,7 @@ import { ModalComponent } from './../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../components/project-section/project-section.component';
 import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
 import { BulletHeliProjectComponent } from './project-details/bulletheli/bulletheli.project.component';
+import { FooDIYProjectComponent } from './project-details/foodiy/foodiy.project.component';
 import { GameFrameworksProjectComponent } from './project-details/gameframeworks/gameframeworks.project.component';
 import { GameOfLifeProjectComponent } from './project-details/gameoflife/gameoflife.project.component';
 import { GBPS3ProjectComponent } from './project-details/gbps3/gbps3.project.component';
@@ -49,6 +50,7 @@ describe('ProjectsComponent', () => {
         MuScreenManagerProjectComponent,
         SuperEasyPHPTemplatingProjectComponent,
         Windows8AppsProjectComponent,
+        FooDIYProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
