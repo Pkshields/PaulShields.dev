@@ -12,6 +12,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BombcastRadioProjectComponent } from './pages/projects/project-details/bombcastradio/bombcastradio.project.component';
+import { BrainfuckProjectComponent } from './pages/projects/project-details/brainfuck/brainfuck.project.component';
 import { BulletHeliProjectComponent } from './pages/projects/project-details/bulletheli/bulletheli.project.component';
 import { FooDIYProjectComponent } from './pages/projects/project-details/foodiy/foodiy.project.component';
 import { GameFrameworksProjectComponent } from './pages/projects/project-details/gameframeworks/gameframeworks.project.component';
@@ -59,6 +60,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
       SuperEasyPHPTemplatingProjectComponent,
       Windows8AppsProjectComponent,
       FooDIYProjectComponent,
+      BrainfuckProjectComponent,
 
       ModalComponent,
       ProjectItemComponent,

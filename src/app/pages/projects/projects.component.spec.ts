@@ -6,6 +6,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ModalComponent } from './../../components/modal/modal.component';
 import { ProjectSectionComponent } from './../../components/project-section/project-section.component';
 import { BombcastRadioProjectComponent } from './project-details/bombcastradio/bombcastradio.project.component';
+import { BrainfuckProjectComponent } from './project-details/brainfuck/brainfuck.project.component';
 import { BulletHeliProjectComponent } from './project-details/bulletheli/bulletheli.project.component';
 import { FooDIYProjectComponent } from './project-details/foodiy/foodiy.project.component';
 import { GameFrameworksProjectComponent } from './project-details/gameframeworks/gameframeworks.project.component';
@@ -51,6 +52,7 @@ describe('ProjectsComponent', () => {
         SuperEasyPHPTemplatingProjectComponent,
         Windows8AppsProjectComponent,
         FooDIYProjectComponent,
+        BrainfuckProjectComponent,
 
         ProjectSectionComponent,
         ProjectItemComponent,
