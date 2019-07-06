@@ -28,7 +28,7 @@
             "styles": [
               "node_modules/reset-css/reset.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/css/fonts.scss",
+              "src/css/fonts-init.scss",
               "src/css/animations.scss",
               "src/css/styles.scss"
             ],
@@ -89,7 +89,7 @@
             "styles": [
               "node_modules/reset-css/reset.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/css/fonts.scss",
+              "src/css/fonts-init.scss",
               "src/css/animations.scss",
               "src/css/styles.scss"
             ],
