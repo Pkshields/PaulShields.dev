@@ -1,8 +1,12 @@
+import { DummyComponent } from 'src/testing/mocks/dummy-component';
+
+import { Location } from '@angular/common';
+import { Type } from '@angular/core';
+import { ComponentFixture, TestBed, async, fakeAsync, tick } from '@angular/core/testing';
 import { DomSanitizer } from '@angular/platform-browser';
-import { async, TestBed, ComponentFixture } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
 import { ProjectItemComponent } from './project-item.component';
-import { Injector, Type } from '@angular/core';
 
 describe('ProjectItemComponent', () => {
   let component: ProjectItemComponent;
@@ -11,13 +15,18 @@ describe('ProjectItemComponent', () => {
 
   let domSanitizer: DomSanitizer;
 
+  const dummyComponentPath = 'next-great-page';
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule.withRoutes([
+          { path: dummyComponentPath, component: DummyComponent }
+        ])
       ],
       declarations: [
-        ProjectItemComponent
+        ProjectItemComponent,
+        DummyComponent
       ],
     }).compileComponents();
 
@@ -39,14 +48,6 @@ describe('ProjectItemComponent', () => {
 
     component.image = 'string.jpg';
     component.getBackgroundImage();
-
-    expect(spy).toHaveBeenCalled();
-  });
-
-  it('should trigger the item clicked event', () => {
-    const spy = spyOn(component.itemClicked, 'emit');
-
-    component.triggerItemClicked();
 
     expect(spy).toHaveBeenCalled();
   });
@@ -81,12 +82,15 @@ describe('ProjectItemComponent', () => {
     expect(element.style.backgroundImage).toContain(imageUrl);
   });
 
-  it('should trigger item clicked event when clicked', () => {
-    const spy = spyOn(component.itemClicked, 'emit');
+  it('should navigate to router link event when clicked', fakeAsync(() => {
+    const location = TestBed.get(Location) as Location;
+    component.routerLink = dummyComponentPath;
+    fixture.detectChanges();
 
     const element: HTMLElement = dom.querySelector('a');
     element.click();
+    tick();
 
-    expect(spy).toHaveBeenCalled();
-  });
+    expect(location.path()).toContain(dummyComponentPath);
+  }));
 });

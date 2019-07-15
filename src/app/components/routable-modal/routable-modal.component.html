@@ -1,4 +1,4 @@
-<div id="modal" *ngIf="isVisible" (click)="hide()">
+<div id="modal" routerLink="..">
   <article (click)="$event.stopPropagation();">
     <ng-content></ng-content>
   </article>

@@ -1,19 +1,15 @@
-import { ModalComponent } from './../../../../components/modal/modal.component';
-import { ProjectSectionComponent } from './../../../../components/project-section/project-section.component';
+import { RoutableModalComponent } from 'src/app/components/routable-modal/routable-modal.component';
 
-import { async, TestBed, ComponentFixture } from '@angular/core/testing';
-
-import { RouterTestingModule } from '@angular/router/testing';
-import { ProjectItemComponent } from 'src/app/components/project-item/project-item.component';
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { RouterTestingModule } from '@angular/router/testing';
+
 import { ParticleSystemProjectComponent } from './particlesystem.project.component';
 
 describe('ParticleSystemProjectComponent', () => {
   let component: ParticleSystemProjectComponent;
   let dom: HTMLElement;
   let fixture: ComponentFixture<ParticleSystemProjectComponent>;
-
-  let projectSectionComponent: ProjectSectionComponent;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -22,9 +18,7 @@ describe('ParticleSystemProjectComponent', () => {
       ],
       declarations: [
         ParticleSystemProjectComponent,
-        ProjectSectionComponent,
-        ProjectItemComponent,
-        ModalComponent
+        RoutableModalComponent
       ],
     }).compileComponents();
 
@@ -33,45 +27,27 @@ describe('ParticleSystemProjectComponent', () => {
 
     component = fixture.debugElement.componentInstance;
     dom = fixture.debugElement.nativeElement;
-
-    projectSectionComponent = fixture.debugElement.query(By.directive(ProjectSectionComponent)).componentInstance;
   }));
 
   it('should create the project component', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have set a project item title', () => {
-    expect(projectSectionComponent.title).not.toEqual('');
-  });
+  it('should contain the content in a single modal', () => {
+    const modals = fixture.debugElement.queryAll(By.directive(RoutableModalComponent));
 
-  it('should have set a project item subtext', () => {
-    expect(projectSectionComponent.subtext).not.toEqual('');
-  });
-
-  it('should have set a project item background image', () => {
-    expect(projectSectionComponent.image).not.toEqual('');
+    expect(modals.length).toBe(1);
   });
 
   it('should contain a header in the project details modal', () => {
-    givenProjectModalIsOpen();
-
     const element = dom.querySelector('h2');
 
     expect(element).toBeTruthy();
   });
 
   it('should contain content in the project details modal', () => {
-    givenProjectModalIsOpen();
-
     const element = dom.querySelector('article');
 
     expect(element).toBeTruthy();
   });
-
-  function givenProjectModalIsOpen() {
-    const projectItemLink: HTMLElement = dom.querySelector('a');
-    projectItemLink.click();
-    fixture.detectChanges();
-  }
 });

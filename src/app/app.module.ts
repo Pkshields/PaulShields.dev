@@ -4,9 +4,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { ModalComponent } from './components/modal/modal.component';
 import { ProjectItemComponent } from './components/project-item/project-item.component';
-import { ProjectSectionComponent } from './components/project-section/project-section.component';
+import { RoutableModalComponent } from './components/routable-modal/routable-modal.component';
 import { AppComponent } from './pages/application/app.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
@@ -62,9 +61,8 @@ import { SkillsComponent } from './pages/skills/skills.component';
       FooDIYProjectComponent,
       BrainfuckProjectComponent,
 
-      ModalComponent,
-      ProjectItemComponent,
-      ProjectSectionComponent
+      RoutableModalComponent,
+      ProjectItemComponent
    ],
    imports: [
       BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -10,8 +10,7 @@ export class ProjectItemComponent {
   @Input() title: string;
   @Input() subtext: string;
   @Input() image: string;
-
-  @Output() itemClicked = new EventEmitter<void>();
+  @Input() routerLink: string;
 
   constructor(private sanitizer: DomSanitizer) { }
 
@@ -21,9 +20,5 @@ export class ProjectItemComponent {
     }
 
     return 'none';
-  }
-
-  triggerItemClicked() {
-    this.itemClicked.emit();
   }
 }
