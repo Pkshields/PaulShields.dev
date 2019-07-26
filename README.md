@@ -26,7 +26,7 @@ Run a static analysis check over the source files by executing `ng lint`.
 
 ## Deployment
 
-Deployment should not be done via a local dev machine and should only executed by the [CI server](https://circleci.com/gh/Pkshields/PaulShields.dev). The deployment key, as well as other deployment configuration options, are stored as environment variables against the project on the CI server.
+Deployment _should not_ be done via a local dev machine and should only executed by the [CI server](https://circleci.com/gh/Pkshields/PaulShields.dev). Any commits to the `master` branch will trigger a GitHub Pages deployment and will push the latest website to the [the appropriate repository](https://github.com/Pkshields/pkshields.github.io). The deployment key, as well as other deployment configuration options, are stored as environment variables against the project on the CI server.
 
 ## Projects
 
@@ -36,10 +36,10 @@ The Projects page on this website is structured slightly differently from the ot
 
 - The Project page will link directly to the repository on GitHub, if it is open source.
 - Any compiled binaries, demo projects etc. that are available to download are uploaded directly to the repository via a [release](https://help.github.com/en/articles/creating-releases), which can then linked to directly by Project on the website.
-- Any web resources such as documentation or a web page based game is provided using a [project based GitHub Pages site](https://pages.github.com/),
+- Any web resources such as documentation or a web page based game is provided using a [project based GitHub Pages site](https://pages.github.com/).
 
 ### BitBucket
 
 - The Project page will link directly to the repository on BitBucket, if it is open source.
 - Any compiled binaries, demo projects etc. that are available to download are uploaded directly to the repository's [Downloads](https://bitbucket.org/blog/new-feature-downloads) page, which can then then linked to directly by Project on the website.
-- Any web resources such as documentation or a web page based game is hosted by [Surge](https://surge.sh/), check [this repository](https://bitbucket.org/blog/new-feature-downloads) for more information.
+- Any web resources such as documentation or a web page based game is hosted by [Surge](https://surge.sh/), check [this repository](https://bitbucket.org/Pkshields/paulshields.dev-archive/) for more information.
