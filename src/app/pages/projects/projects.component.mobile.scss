@@ -1,0 +1,11 @@
+@import '../../../css/mediasizes';
+
+@media #{$mobile-size} {
+  section {
+    text-align: center;
+
+    * {
+      text-align: left;
+    }
+  }
+}
