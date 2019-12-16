@@ -1,8 +1,8 @@
 @import '../../../css/colors';
 @import '../../../css/fonts';
 
-$animation-speed: 0.8s;
-$animation-delay: 1s;
+$animation-speed: 0.9s;
+$animation-delay: 1.2s;
 
 div {
   min-height: 100vh;
@@ -34,7 +34,7 @@ div {
     }
 
     p {
-      animation: slideInFromRightWithBounce $animation-speed ease-out;
+      animation: fadeIn $animation-speed ease-out;
       animation-fill-mode: both;
 
       &:nth-child(1) {
