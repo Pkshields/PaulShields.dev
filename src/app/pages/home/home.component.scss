@@ -6,19 +6,18 @@ $animation-delay: 1.2s;
 
 div {
   min-height: 100vh;
-  background-color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  div {
+  #homepage-text {
     @extend %open-sans-bold-font;
     text-align: center;
 
     p {
       font-size: 2.7em;
       line-height: 3.2em;
-      
+
       .name {
         color: $color-emerald;
       }
@@ -51,14 +50,14 @@ div {
 }
 
 @media (max-width: 1100px) {
-  div > div > p {
+  div > #homepage-text > p {
     font-size: 2.1em;
     line-height: 3em;
   }
 }
 
 @media (max-width: 800px) {
-  div > div > p {
+  div > #homepage-text > p {
     font-size: 1.5em;
     line-height: 3em;
   }

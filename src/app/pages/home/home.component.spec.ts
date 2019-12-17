@@ -1,16 +1,21 @@
-import { async, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { TestBed, async } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { HomeComponent } from './home.component';
-import { RouterTestingModule } from '@angular/router/testing';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let dom: HTMLElement;
 
   beforeEach(async(() => {
+    // Suppressing warnings caused by NO_ERRORS_SCHEMA
+    spyOn(console, 'warn');
+
     TestBed.configureTestingModule({
+      schemas: [ NO_ERRORS_SCHEMA ],
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
       ],
       declarations: [
         HomeComponent
@@ -49,5 +54,17 @@ describe('HomeComponent', () => {
 
       colorClasses.push(span.className);
     });
+  });
+
+  it('should contain a particles element', () => {
+    const particlesElement = dom.querySelector('particles');
+
+    expect(particlesElement).toBeTruthy();
+  });
+
+  it('should position the particles element in the background', () => {
+    const zIndexValue = component.particleCss['z-index'] as number;
+
+    expect(zIndexValue).toBeLessThan(0);
   });
 });

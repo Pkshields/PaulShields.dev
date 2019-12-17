@@ -1,3 +1,4 @@
+import { ParticlesModule } from 'angular-particle';
 import { NgxTweetModule } from 'ngx-tweet';
 
 import { NgModule } from '@angular/core';
@@ -67,7 +68,8 @@ import { SkillsComponent } from './pages/skills/skills.component';
    imports: [
       BrowserModule,
       AppRoutingModule,
-      NgxTweetModule
+      NgxTweetModule,
+      ParticlesModule
    ],
    providers: [],
    bootstrap: [
